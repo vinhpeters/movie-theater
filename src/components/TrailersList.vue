@@ -1,9 +1,3 @@
 <template>
-    <div class="carousel-inner">
-        
-    </div>
+  <div class="carousel-inner"></div>
 </template>
-
-<script>
-    
-</script>
