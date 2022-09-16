@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+$Red: #ff0000;
+$Blue: blue;
+$Black: #000000;
+
+body {
+    background-color: #000000;
+}
+
+
+.bgBlack {
+    background-color: $Black;
+
+}
+
+
+.jumbotron {
+    h1 {
+        font-family: 'Neonderthaw', cursive;
+        color: #fff;
+
+        text-shadow:
+            /* White glow*/
+            0 0 20px #fff,
+            0 0 30px #fff,
+            0 0 50px #fff,
+            /* Color glow*/
+            0 0 50px $Red,
+            0 0 90px $Red,
+            0 0 100px $Red,
+            0 0 110px $Red,
+            0 0 160px $Red;
+
+    }
+}
+
+.jumbotron {
+    h2 {
+        font-family: 'Neonderthaw', cursive;
+        color: #fff;
+
+        text-shadow:
+            /* White glow*/
+            0 0 20px $Blue,
+            0 0 30px $Blue,
+            0 0 50px $Blue,
+            /* Color glow*/
+            0 0 50px $Blue,
+            0 0 90px $Blue,
+            0 0 100px $Blue,
+            0 0 110px $Blue,
+            0 0 160px $Blue;
+    }
+}
+
+.pulsate {
+    animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+
+    100% {
+        /* Larger blur radius */
+        text-shadow:
+            0 0 16px #fff,
+            0 0 44px #fff,
+            0 0 76px #fff,
+            0 0 16px $Red,
+            0 0 320px $Red,
+            0 0 360px $Red,
+            0 0 400px $Red,
+            0 0 600px $Red;
+    }
+
+    0% {
+        /* Smaller blur radius */
+        text-shadow:
+            0 0 4px #fff,
+            0 0 8px #fff,
+            0 0 12px #fff,
+            0 0 20px $Red,
+            0 0 90px $Red,
+            0 0 110px $Red,
+            0 0 140px $Red,
+            0 0 160px $Red;
+    }
+}
+
+.bgTheatre {
+    background-image: url("../img/theatre_entrance_desat.jpg");
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 75%;
+}
+
+.trailerbg {
+    background-image: url("../img/theater.png");
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.entrance-bg {
+    background-image: url("../img/theatre_entrance.jpg");
+    min-height: 75vh;
+    overflow: hidden;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center ;
+   
+
+}
