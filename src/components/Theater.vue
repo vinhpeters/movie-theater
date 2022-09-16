@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
   <div class="trailerbg carousel-wrapper">
     <div class="container vh-100" id="trailerContainer">
       <div class="row h-100 mt-n5">
