@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import "../node_modules/bootstrap/scss/functions";
@@ -8,9 +9,11 @@
 $Red: #ff0000;
 $Blue: blue;
 $Black: #000000;
+$Orange: #ec7323;
 
 body {
     background-color: #000000;
+    font-family: Source Sans;
 }
 
 
@@ -19,45 +22,34 @@ body {
 
 }
 
+.bg-image {
+    background: url("../img/jeff.jpg") no-repeat fixed center/cover,
+    transparent linear-gradient(60deg, #000000 0%, #808080 50%) 0% 0% no-repeat padding-box;
+    background-blend-mode: multiply ;
 
-.jumbotron {
-    h1 {
-        font-family: 'Neonderthaw', cursive;
-        color: #fff;
-
-        text-shadow:
-            /* White glow*/
-            0 0 20px #fff,
-            0 0 30px #fff,
-            0 0 50px #fff,
-            /* Color glow*/
-            0 0 50px $Red,
-            0 0 90px $Red,
-            0 0 100px $Red,
-            0 0 110px $Red,
-            0 0 160px $Red;
-
-    }
 }
 
 .jumbotron {
-    h2 {
-        font-family: 'Neonderthaw', cursive;
-        color: #fff;
-
-        text-shadow:
-            /* White glow*/
-            0 0 20px $Blue,
-            0 0 30px $Blue,
-            0 0 50px $Blue,
-            /* Color glow*/
-            0 0 50px $Blue,
-            0 0 90px $Blue,
-            0 0 100px $Blue,
-            0 0 110px $Blue,
-            0 0 160px $Blue;
-    }
+    font: normal normal normal 10rem/10rem Anton;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
+
+.jumbotron-subtitle {
+
+    font: normal normal normal 2rem/2rem Source Sans Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font: normal normal 300 1.5rem/1.5rem Source Sans Pro;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
 
 .pulsate {
     animation: pulsate 1.5s infinite alternate;
@@ -140,7 +132,7 @@ body {
     height: 100%;
     background-attachment: fixed;
     background-size: contain;
-    background-position: center ;
-   
+    background-position: center;
+
 
 }
