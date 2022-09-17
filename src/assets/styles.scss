@@ -16,6 +16,9 @@ body {
     font-family: Source Sans;
 }
 
+.btn {
+    border-radius: 0px;
+}
 
 .bgBlack {
     background-color: $Black;
@@ -24,17 +27,32 @@ body {
 
 .bg-image {
     background: url("../img/jeff.jpg") no-repeat fixed center/cover,
-    transparent linear-gradient(60deg, #000000 0%, #808080 50%) 0% 0% no-repeat padding-box;
-    background-blend-mode: multiply ;
+        transparent linear-gradient(60deg, #000000 0%, #808080 50%) 0% 0% no-repeat padding-box;
+    background-blend-mode: multiply;
 
 }
 
+.poster {
+    max-height: 40rem;
+    border: 0.06rem solid #FFFFFF;
+}
+
 .jumbotron {
-    font: normal normal normal 10rem/10rem Anton;
+    font-family: Anton;
+    @include font-size(10rem);
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
+
+.address {
+    font-family: Anton;
+    @include font-size(5rem);
+    letter-spacing: 0rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
 
 .jumbotron-subtitle {
 
