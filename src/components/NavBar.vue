@@ -25,7 +25,7 @@
           </li>
         </ul>
         <div class="d-flex m-2">
-          <button class="btn btn-outline-light nav-link p-2" type="submit">Showtimes</button>
+          <button class="btn-header btn btn-outline-light nav-link p-2" type="submit">SHOWTIMES</button>
         </div>
       </div>
     </div>

@@ -13,11 +13,18 @@ $Orange: #ec7323;
 
 body {
     background-color: #000000;
-    font-family: Source Sans;
+    font-family: Source Sans Pro, sans-serif;
+    color: #fff;
 }
 
-.btn {
+.header-btn {
     border-radius: 0px;
+}
+
+.btn-showtime {
+    font-family: Source Sans Pro;
+    @include font-size(1.2rem);
+
 }
 
 .bgBlack {
@@ -26,9 +33,39 @@ body {
 }
 
 .bg-image {
-    background: url("../img/jeff.jpg") no-repeat fixed center/cover,
+    background: url("./img/jeff.jpg") no-repeat fixed center/cover,
         transparent linear-gradient(60deg, #000000 0%, #808080 50%) 0% 0% no-repeat padding-box;
     background-blend-mode: multiply;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    background-color: transparent;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 0.1rem solid #ffffff;
+    border-radius: 100%;
+    margin-right: 1rem;
+
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+}
+
+
+.card-title {
+    font-family: Anton;
+    @include font-size(3rem);
+    text-transform: uppercase;
+}
+
+.card-header {
+    font-family: Source Sans Pro;
+    font-weight: bold;
+    @include font-size(1.2rem);
+    text-transform: uppercase;
 
 }
 
@@ -60,6 +97,8 @@ body {
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.14rem;
 }
 
 .nav-link {

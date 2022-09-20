@@ -2,37 +2,32 @@
   <div>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
-        <button
+        <template v-for="movie in MOVIES" key="movie.id">
+
+          <button
           type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
+          data-bs-target="#carouselIndicators"
+          :data-bs-slide-to="movie.id"
+          :class= "movie.id === 0 ? 'active' :''"
+          :aria-label="Slide + movie.id"
+          ></button>
+          
+        </template>
+        
+
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <MovieCard />
-        </div>
+        <template v-for="movie in MOVIES">
+          <div class="carousel-item active">
+            <MovieCard :movie="movie" />
+          </div>
+        </template>
 
-        <div class="carousel-item">
-          <img
-            src="../img/bullet-train-teaser-poster.jpg"
-            class="d-block w-100"
-          />
-        </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -53,10 +48,19 @@
 
 <script>
 import MovieCard from "./MovieCard.vue";
+import { MOVIES } from "../data/movies.js";
+console.log(MOVIES)
+console.log(MOVIES[0])
 export default {
-  name: "Carousel",
   components: {
     MovieCard,
   },
+  data() {
+return {
+
+  MOVIES: MOVIES
+}
+
+  }
 };
 </script>
