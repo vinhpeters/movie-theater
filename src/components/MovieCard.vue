@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid bg-transparent m-4 p-4">
     <div class="row justify-content-center g-0">
-      <div class="col-md-4 border border-white text-center align-self-center">
+      <div class="col-md-4  text-center align-self-center">
         <div class="m-4">
           <img
             :src="`./img/${movie.image}`"
@@ -10,12 +10,12 @@
           />
         </div>
       </div>
-      <div class="col-md-4 border border-white">
+      <div class="col-md-4 ">
         <div class="card-body">
           <h5 class="card-title text-white">{{movie.title}}</h5>
           <div class="container mt-3">
             <div class="row p-0">
-              <div class="p-0 border border-white d-flex-column">
+              <div class="p-0  d-flex-column">
                 <div class="text-white">
                   <span class="card-header">DIRECTOR </span>
                   <span>{{movie.director}}</span> <span> | </span>

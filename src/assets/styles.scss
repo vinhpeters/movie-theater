@@ -11,19 +11,52 @@ $Blue: blue;
 $Black: #000000;
 $Orange: #ec7323;
 
+.address {
+    font-family: Anton;
+    @include font-size(5rem);
+    letter-spacing: 0rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.address-link:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.address-link:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.address-link:hover {
+    text-decoration: none;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: black;
+    color: #fff
+}
+
+.address-link:active {
+    text-decoration: none;
+    color: #000000;
+}
+
+
 body {
     background-color: #000000;
     font-family: Source Sans Pro, sans-serif;
     color: #fff;
+
 }
 
-.header-btn {
+.btn-header {
     border-radius: 0px;
 }
 
 .btn-showtime {
     font-family: Source Sans Pro;
     @include font-size(1.2rem);
+
 
 }
 
@@ -82,13 +115,6 @@ body {
     text-transform: uppercase;
 }
 
-.address {
-    font-family: Anton;
-    @include font-size(5rem);
-    letter-spacing: 0rem;
-    color: #000000;
-    text-transform: uppercase;
-}
 
 
 .jumbotron-subtitle {
@@ -192,4 +218,18 @@ body {
     background-position: center;
 
 
+}
+
+.section-header {
+    font-family: Anton;
+    @include font-size(5rem);
+    letter-spacing: 0rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 5vw;
+    height: 5vw;
 }

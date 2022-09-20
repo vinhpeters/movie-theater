@@ -1,28 +1,29 @@
 <template>
-  <div>
-    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="container-fluid vh-100" id="#nowShowing">
+    <div class="text-center pt-2">
+      <span class="section-header">NOW SHOWING</span>
+    </div>
+    <div id="carouselIndicators" class="carousel slide">
       <div class="carousel-indicators">
-        <template v-for="movie in MOVIES" key="movie.id">
-
+        <template v-for="movie in MOVIES" :key="movie.id">
           <button
-          type="button"
-          data-bs-target="#carouselIndicators"
-          :data-bs-slide-to="movie.id"
-          :class= "movie.id === 0 ? 'active' :''"
-          :aria-label="Slide + movie.id"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            :data-bs-slide-to="movie.id"
+            :class="getClass(movie.id)"
+            :aria-curent="movie.id === 0 ? 'true' : 'false'"
+            :aria-label="'Slide' + movie.id"
           ></button>
-          
         </template>
-        
-
       </div>
-      <div class="carousel-inner">
-        <template v-for="movie in MOVIES">
-          <div class="carousel-item active">
+      <div class="carousel-inner ">
+        <template v-for="movie in MOVIES" :key="movie.id">
+          <div
+            :class="movie.id === 0 ? 'carousel-item active' : 'carousel-item'"
+          >
             <MovieCard :movie="movie" />
           </div>
         </template>
-
       </div>
       <button
         class="carousel-control-prev"
@@ -36,7 +37,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleIndicators"
+        data-bs-target="#carouselIndicators"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -49,18 +50,22 @@
 <script>
 import MovieCard from "./MovieCard.vue";
 import { MOVIES } from "../data/movies.js";
-console.log(MOVIES)
-console.log(MOVIES[0])
 export default {
   components: {
     MovieCard,
   },
   data() {
-return {
-
-  MOVIES: MOVIES
-}
-
-  }
+    return {
+      MOVIES: MOVIES,
+    };
+  },
+  methods: {
+    getClass(index) {
+      console.log(index);
+      const cls = index === 0 ? "active" : "";
+      console.log(cls);
+      return cls;
+    },
+  },
 };
 </script>

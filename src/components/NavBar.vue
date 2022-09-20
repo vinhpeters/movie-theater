@@ -18,7 +18,7 @@
             <a class="lead nav-link" href="#"> VISIT</a>
           </li>
           <li class="nav-item">
-            <a class="lead nav-link" href="/theater">NOW SHOWING</a>
+            <a class="lead nav-link" href="#nowShowing">NOW SHOWING</a>
           </li>
           <li class="nav-item">
             <a class="lead nav-link" href="#"> COMING SOON</a>
