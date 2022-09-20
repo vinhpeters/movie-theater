@@ -30,7 +30,7 @@ export const MOVIES =
             director: "Alfonso Cuarón",
             description: "A year in the life of a middle-class family's maid in Mexico City in the early 1970s.",
             runtime: "135 min",
-            rating: "98%",
+            rating: "96%",
             year: "2018",
             image: "roma.jpg"
 

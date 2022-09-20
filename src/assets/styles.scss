@@ -6,6 +6,8 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins/_breakpoints";
 
+$enable-negative-margins: true;
+
 $Red: #ff0000;
 $Blue: blue;
 $Black: #000000;
@@ -80,6 +82,7 @@ body {
     border: 0.1rem solid #ffffff;
     border-radius: 100%;
     margin-right: 1rem;
+    bottom: -4rem;
 
 }
 

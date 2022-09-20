@@ -3,7 +3,7 @@
     <div class="text-center pt-2">
       <span class="section-header">NOW SHOWING</span>
     </div>
-    <div id="carouselIndicators" class="carousel slide">
+    <div id="carouselIndicators" class="carousel slide mt-4">
       <div class="carousel-indicators">
         <template v-for="movie in MOVIES" :key="movie.id">
           <button
@@ -16,7 +16,8 @@
           ></button>
         </template>
       </div>
-      <div class="carousel-inner ">
+
+      <div class="carousel-inner h-100">
         <template v-for="movie in MOVIES" :key="movie.id">
           <div
             :class="movie.id === 0 ? 'carousel-item active' : 'carousel-item'"
