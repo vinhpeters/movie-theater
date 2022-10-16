@@ -1,10 +1,10 @@
 <template>
-  <div class="container-fluid vh-100" id="#nowShowing">
-    <div class="text-center pt-2">
+  <div class="container-fluid vh-100 p-2" id="#nowShowing">
+    <div class="text-center">
       <span class="section-header">NOW SHOWING</span>
     </div>
-    <div id="carouselIndicators" class="carousel slide mt-4">
-      <div class="carousel-indicators">
+    <div id="carouselIndicators" class="carousel slide mt-2">
+      <div class="carousel-indicators pb-2">
         <template v-for="movie in MOVIES" :key="movie.id">
           <button
             type="button"
@@ -17,7 +17,7 @@
         </template>
       </div>
 
-      <div class="carousel-inner h-100">
+      <div class="carousel-inner">
         <template v-for="movie in MOVIES" :key="movie.id">
           <div
             :class="movie.id === 0 ? 'carousel-item active' : 'carousel-item'"
@@ -32,7 +32,10 @@
         data-bs-target="#carouselIndicators"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span
+          class="carousel-control-prev-icon d-none d-lg-block"
+          aria-hidden="true"
+        ></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button
@@ -41,7 +44,10 @@
         data-bs-target="#carouselIndicators"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span
+          class="carousel-control-next-icon d-none d-lg-block"
+          aria-hidden="true"
+        ></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>

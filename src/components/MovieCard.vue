@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid bg-transparent">
-    <div class="row justify-content-center g-0">
-      <div class="col-lg-4 col-sm-6">
+    <div class="row min-h-100 justify-content-center align-items-center g-0">
+      <div class="col-lg-4 col-sm-8">
         <div class="m-2 p-0 text-center ">
           <img
             :src="`./img/${movie.image}`"
@@ -10,7 +10,7 @@
           />
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6">
+      <div class="col-lg-4 col-sm-8">
         <div class="card-body">
           <span class="card-title">{{ movie.title }}</span>
           <div class="container mt-3">

@@ -21,10 +21,10 @@
             <a class="lead nav-link" href="#nowShowing">NOW SHOWING</a>
           </li>
           <li class="nav-item">
-            <a class="lead nav-link" href="#"> COMING SOON</a>
+            <a class="lead nav-link" href="#">COMING SOON</a>
           </li>
         </ul>
-        <div class="d-flex m-2">
+        <div class="d-flex me-2">
           <button class="btn-header btn btn-outline-light nav-link p-2" type="submit">SHOWTIMES</button>
         </div>
       </div>

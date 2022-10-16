@@ -82,7 +82,8 @@ body {
     border: 0.1rem solid #ffffff;
     border-radius: 100%;
     margin-right: 1rem;
-    bottom: -4rem;
+    bottom: -3rem;
+
 
 }
 
@@ -106,7 +107,7 @@ body {
 }
 
 .poster {
-    max-height: 40rem;
+    max-height: 50rem;
     border: 0.06rem solid #FFFFFF;
 }
 
@@ -228,6 +229,14 @@ body {
     @include font-size(5rem);
     letter-spacing: 0rem;
     color: #fff;
+    text-transform: uppercase;
+}
+
+.section-header-black {
+    font-family: Anton;
+    @include font-size(5rem);
+    letter-spacing: 0rem;
+    color: #000;
     text-transform: uppercase;
 }
 
