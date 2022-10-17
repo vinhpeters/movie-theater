@@ -79,18 +79,22 @@ body {
     background-color: transparent;
     width: 0.8rem;
     height: 0.8rem;
-    border: 0.1rem solid #ffffff;
+    border: 0.11rem solid #ffffff;
     border-radius: 100%;
     margin-right: 1rem;
     bottom: -3rem;
-
-
 }
 
 .carousel-indicators .active {
     background-color: #fff;
 }
 
+.indicators-black [data-bs-target] {
+    border: 0.11rem solid #000000;
+}
+ .indicators-black .active {
+    background-color: #000000;
+}
 
 .card-title {
     font-family: Anton;
@@ -107,8 +111,14 @@ body {
 }
 
 .poster {
-    max-height: 50rem;
+    max-height: 40rem;
     border: 0.06rem solid #FFFFFF;
+}
+
+.poster-group {
+    max-height: 35rem;
+    max-width: 25rem;
+    border: 0.06rem solid #000;
 }
 
 .jumbotron {
@@ -240,8 +250,26 @@ body {
     text-transform: uppercase;
 }
 
-.carousel-control-next-icon,
+.carousel-control-next-icon{
+    width: 5vw;
+    height: 5vw;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
 .carousel-control-prev-icon {
     width: 5vw;
     height: 5vw;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
+}
+
+
+.carousel-control-next-icon-black {
+    width: 5vw;
+    height: 5vw;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon-black {
+    width: 5vw;
+    height: 5vw;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e");
 }

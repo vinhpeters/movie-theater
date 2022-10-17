@@ -1,17 +1,21 @@
 <template>
-  <div class="container-fluid vh-100 p-2" id="#nowShowing">
+  <div class="container-fluid min-vh-100 p-2" id="nowShowing">
     <div class="text-center">
       <span class="section-header">NOW SHOWING</span>
     </div>
-    <div id="carouselIndicators" class="carousel slide mt-2">
-      <div class="carousel-indicators pb-2">
+    <div
+      id="carouselIndicators"
+      class="carousel slide mt-3"
+      data-bs-ride="true"
+    >
+      <div class="carousel-indicators pb-0 mb-0">
         <template v-for="movie in MOVIES" :key="movie.id">
           <button
             type="button"
             data-bs-target="#carouselIndicators"
             :data-bs-slide-to="movie.id"
             :class="getClass(movie.id)"
-            :aria-curent="movie.id === 0 ? 'true' : 'false'"
+            :aria-current="movie.id === 0 ? 'true' : 'false'"
             :aria-label="'Slide' + movie.id"
           ></button>
         </template>

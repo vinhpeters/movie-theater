@@ -2,11 +2,11 @@
   <div class="container-fluid bg-transparent">
     <div class="row min-h-100 justify-content-center align-items-center g-0">
       <div class="col-lg-4 col-sm-8">
-        <div class="m-2 p-0 text-center ">
+        <div class="m-2 p-0 text-center">
           <img
             :src="`./img/${movie.image}`"
             class="img-fluid poster"
-            alt="..."
+            :alt="`${movie.title}`"
           />
         </div>
       </div>
@@ -35,7 +35,6 @@
                   {{ movie.description }}
                 </p>
               </div>
-
               <div class="mt-3 p-0">
                 <span class="card-title">SHOWTIMES</span>
               </div>
