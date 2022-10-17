@@ -8,7 +8,7 @@
       class="carousel slide mt-3"
       data-bs-ride="true"
     >
-      <div class="carousel-indicators pb-0 mb-0">
+      <div class="carousel-indicators d-none text-center d-lg-inline pb-0 mb-0">
         <template v-for="movie in MOVIES" :key="movie.id">
           <button
             type="button"

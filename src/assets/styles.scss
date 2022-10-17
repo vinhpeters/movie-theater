@@ -79,7 +79,7 @@ body {
     background-color: transparent;
     width: 0.8rem;
     height: 0.8rem;
-    border: 0.11rem solid #ffffff;
+    border: 0.12rem solid #ffffff;
     border-radius: 100%;
     margin-right: 1rem;
     bottom: -3rem;
@@ -90,7 +90,8 @@ body {
 }
 
 .indicators-black [data-bs-target] {
-    border: 0.11rem solid #000000;
+    position: relative;
+    border: 0.12rem solid #000000;
 }
  .indicators-black .active {
     background-color: #000000;
@@ -117,7 +118,6 @@ body {
 
 .poster-group {
     max-height: 35rem;
-    max-width: 25rem;
     border: 0.06rem solid #000;
 }
 

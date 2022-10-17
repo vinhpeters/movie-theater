@@ -1,10 +1,10 @@
 <template>
-  <div class="container-fluid  px-5 ">
+  <div class="container-fluid px-5 ">
     <div
-      class="row min-h-100 justify-content-center align-items-center g-o"
+      class="row justify-content-center align-items-center g-o"
     >
       <template v-for="image in group.images">
-        <div class="col-3 mx-0 g-0">
+        <div class="col-lg-3 col-sm-8 mx-0 g-0">
           <img
             :src="`./img/${image.image}`"
             class="img-fluid poster poster-group"
