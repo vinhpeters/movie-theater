@@ -7,6 +7,7 @@
 @import "../node_modules/bootstrap/scss/mixins/_breakpoints";
 
 $enable-negative-margins: true;
+$carousel-transition-duration: 2s;
 
 $Red: #ff0000;
 $Blue: blue;
@@ -93,7 +94,8 @@ body {
     position: relative;
     border: 0.12rem solid #000000;
 }
- .indicators-black .active {
+
+.indicators-black .active {
     background-color: #000000;
 }
 
@@ -250,11 +252,12 @@ body {
     text-transform: uppercase;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     width: 5vw;
     height: 5vw;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
 }
+
 .carousel-control-prev-icon {
     width: 5vw;
     height: 5vw;

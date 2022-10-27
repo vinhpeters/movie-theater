@@ -21,7 +21,7 @@
             <a class="lead nav-link" href="#nowShowing">NOW SHOWING</a>
           </li>
           <li class="nav-item">
-            <a class="lead nav-link" href="#">COMING SOON</a>
+            <a class="lead nav-link" href="#comingSoon">COMING SOON</a>
           </li>
         </ul>
         <div class="d-flex me-2">

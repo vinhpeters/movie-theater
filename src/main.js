@@ -5,7 +5,12 @@ import 'bootstrap'
 import './assets/styles.scss'
 
 import router from './router'
+import { Vue3Mq } from "vue3-mq";
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App);
+app.use(Vue3Mq);
+app.use(router)
+app.mount("#app");
+
 
 
