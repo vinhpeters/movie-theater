@@ -1,29 +1,27 @@
-# vue-theater
+# Capital Theater 
+![image](https://user-images.githubusercontent.com/10931117/215366929-79fe5036-68d6-4f63-91a8-6ff5b87eb2ce.png)
 
-This template should help get you started developing with Vue 3 in Vite.
+## About
+A front-end demo with a bold design, featuring some of my favorite movies. Built with
+Vue.js & Bootstrap 5.
 
-## Recommended IDE Setup
+## Project Demo
+[Visit demo](https://papaya-pavlova-2c5501.netlify.app/)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Technologies
+- Vue 3
+- Vue Router
+- Boostrap 5
+- SCSS
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+## Setup
+ To try this project
+ 
+- Clone the GitHub repository locally to your computer
+- In the root directory run:
 ```sh
-npm install
+npm install 
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```sh 
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
